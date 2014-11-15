@@ -1,0 +1,61 @@
+.box-products {
+    position:relative;
+	margin:30px 0 40px;
+}
+.productcarousel .carousel-control{
+    z-index:10;
+}
+.productcarousel .nav{
+    padding:0;
+    margin:0;
+}
+.productcarousel .carousel-controls{
+    position:absolute;
+	height:91%;
+	width:100%;
+}
+.productcarousel .carousel-controls a.carousel-control{
+    font-size:0;
+    line-height: normal;
+    margin: 0;
+    padding:0;
+    text-decoration: none;		
+    background:#9b978e url(../images/books/navArrow.png) no-repeat;
+    border:0;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+    outline:none;	
+}
+#Myshelf .carousel-controls a.carousel-control { background-color:transparent; }
+.productcarousel .carousel-controls a.left{
+	background-position: -122% 50%;
+    top:0px;
+    left:0px;
+	height:100%;
+	width:3%;
+}
+.productcarousel .carousel-controls a.right{
+	background-position: 209% 50%;
+    right:0px;
+    top:0px;
+	height:100%;
+	width:3%;
+}
+.productcarousel .carousel-controls a.left:hover{
+   
+}
+.productcarousel .carousel-controls a.right:hover{
+   
+}
+.productcarousel .tab-content, .producttabs .box-product{
+    overflow:hidden;
+}
+.productcarousel .box-product{
+    padding:0;
+    margin:0;
+}
+.catHead { font-size:14px; background:#B6B6B4; padding:5px 10px; color:#474642; text-shadow:0 1px 1px rgba(255, 255, 255, 0.5); font-weight:bold; margin-bottom:1px;
+border-left:2px solid #419417;}

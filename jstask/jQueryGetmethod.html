@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Jquery|GetMethod</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		alert("Text:"+ $("#test").text());
+		});
+	$('#btn2').click(function(){
+		alert("Html:" + $('#test').html());
+		});
+	
+	});
+</script>
+</head>
+
+<body>
+<div id="test">
+<p >This is <b>bold</b>Paragraph</p>
+</div>
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
+</body>
+</html>

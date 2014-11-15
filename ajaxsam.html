@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ajax Test</title>
+<script type="text/javascript">
+function fun1()
+	{
+	var a;
+	
+	if(window.XMLHttpRequest)
+	{
+		a=new XMLHttpRequest();
+		}
+		else
+		{
+			a=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			
+		a.onreadystatechange=function()
+		{
+			if(a.readyState==4 &&  a.status==200){
+				document.getElementById("myDiv").innerHTML=a.responseText
+				}
+			}
+	a.open("POST","my.txt",true);
+	a.send();
+	</scrpt>
+	}
+	
+</head>
+
+<body>
+click the button below
+<div id="myDiv">
+click the button below
+</div>
+<button type="buuton" onclick="fun1()">Change Content</button>
+</body>
+</html>

@@ -1,0 +1,11 @@
+var a = ["ravi","bala","jothi"];
+ 
+function printArray(a){
+alert("hi");
+doucment.writeln("PrintArray:"+"<br>");
+document.writeln("<br>");
+for (i = 0;i < a.length;i++) {
+	document.write(a[i]+"<br>");
+	}
+}
+printArray(a);

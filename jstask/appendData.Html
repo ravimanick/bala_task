@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>AppandData</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#para").click(function(){
+		$("p").append("Appended Data");
+		});
+	
+		$("#list").click(function(){
+		$("ul").append("<li>Appended list</li>");
+		});
+	});
+</script>
+</head>
+
+<body>
+
+<div id="div1">
+<p>this is paragrah</p>
+<ul>
+<li>List Data1</li>
+<li>List Data1</li>
+<li>List Data1</li>
+</ul>
+</div>
+<button id="para">Append text</button>
+<button id ="list">Append list</button>
+</body>
+</html>

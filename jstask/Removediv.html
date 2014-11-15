@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>JQuary|Remove</title>
+<script src="javascript/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#sam").remove();
+		});
+	});
+</script>
+</head>
+
+<body>
+<div id="sam" style="height:150px;width:300px;border:1px solid black;background-color:yellow;">
+<p>The sample paragraph</p>
+<h3>This is the sample heading</h3>
+<input type="text" name="empty">
+</div>
+<button>Remove the tag</button>
+</body>
+</html>
